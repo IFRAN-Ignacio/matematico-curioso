@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matemático Curioso</title>
+  <link rel="stylesheet" href="matematico.css" />
+</head>
+<body>
+
+  <h1>Matemático Curioso</h1>
+  <p class="subtitulo">Conjetura de Collatz — OIA 2015</p>
+
+  <div class="card">
+    <label for="inputSemilla">Semilla (1 — 9999)</label>
+    <div class="input-row">
+      <input type="number" id="inputSemilla" min="1" max="9999" placeholder="ej: 22" />
+      <button onclick="calcular()">Calcular</button>
+    </div>
+    <p class="error-msg" id="errorMsg">Ingresá un número entre 1 y 9999.</p>
+  </div>
+
+  <div class="card resultados" id="resultados">
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <p class="stat-label">Largo de la secuencia</p>
+        <p class="stat-value" id="outputLargo">—</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-label">Número más grande</p>
+        <p class="stat-value" id="outputMaximo">—</p>
+      </div>
+    </div>
+
+    <p class="seccion-titulo">Secuencia completa</p>
+
+    <div class="leyenda">
+      <span class="leyenda-item"><span class="dot dot-semilla"></span> semilla</span>
+      <span class="leyenda-item"><span class="dot dot-maximo"></span> máximo</span>
+      <span class="leyenda-item"><span class="dot dot-final"></span> final (1)</span>
+      <span class="leyenda-item"><span class="dot dot-normal"></span> normal</span>
+    </div>
+
+    <div class="secuencia-wrapper">
+      <div class="secuencia-numeros" id="outputSecuencia"></div>
+    </div>
+
+  </div>
+
+  <script src="matematico.js"></script>
+
+</body>
+</html>
