@@ -1,6 +1,6 @@
 # Matemático Curioso
 
-Implementación de la Conjetura de Collatz — OIA 2015 Nivel 1 Problema 2.
+Implementación de la Conjetura de Collatz
 
 Dada una semilla S, genera la secuencia donde:
 
